@@ -1,0 +1,401 @@
+
+header{
+	margin:auto;
+	background-color: black;
+	width:100%;
+	height:60px;
+	opacity: 0.8;
+	justify-content: center;
+}
+#label{
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+#imglabel{
+	width: 44px;
+	height:40px;
+	margin-top:8px;
+	margin-left:2px;
+}
+#labelname{
+	font-size: 3em;
+	color:white;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu {
+  list-style: none;
+  margin:0px 0 0px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: white;
+  width: 100%;
+ }
+.menu li {display: inline-block;}
+.menu li:after {
+  content: "∎";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu li:last-child:after {content: none;}
+.menu a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu a, .menu a:visited {color: #606060;}
+.menu a.current, .menu a:hover{color: #606060;}
+.menu a:before,
+.menu a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #606060;
+  transition: .6s;
+}
+.menu a:hover:before, .menu .current:before {left: 0;}
+.menu a:hover:after, .menu .current:after {right: 0;}   
+@media only screen and (max-width: 1280px) {
+.menu {padding-top: 0;}
+.menu li {display: block; color: white;}
+.menu li:after {content: none;}
+.menu a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+.separator::before {
+}
+.separator::after {
+    margin-left: .25em;
+}
+
+.intro{
+  border-radius:3%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vh;
+  margin-top:12px;
+margin-bottom: 12px;
+}
+.separator{
+  margin-top:30px;
+  font-size: 2.3em;
+  font-family: 'Open Sans', sans-serif;
+}
+.popular_items{
+  display:flex;
+  justify-content:space-around;
+  margin-top:8px;
+  background-color: white;
+  padding:10px 160px;
+  margin: 0 0px;
+  flex-wrap: wrap;
+}
+.popular_item_1{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  margin-top:10px;
+  font-size:1.1em;
+  font-family: 'Open Sans', sans-serif;
+  width:298.35px;
+  text-align: justify-all;
+}
+.popular_item_1:hover{
+  box-shadow: 0 0 2px 1px #606060;
+}
+.backforsep{
+  height:35px;
+  width:100%;
+  background-color: #606060;
+}
+
+.imageforcont{
+  width:298.35px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 2px;
+  height: 230.6px;
+
+}
+
+.imageforcont:hover{
+  box-shadow: 0 0 2px 1px #606060;
+}
+
+.buy_cont{
+  width: 298.35px;
+  height:190px;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer{
+ background-color:#606060; 
+ padding-top: 25px;
+ width:100%;
+ display: flex;
+ justify-content: space-around;
+
+}
+.about{
+  
+  text-align: justify;
+  padding-bottom:10px;
+  width: 600px;
+  font-size: 1.1em;
+}
+#pronas{
+text-align: center;
+padding-bottom: 7px;
+font-size: 2em;
+}
+.categories{
+  
+  text-align: left;
+  padding: 0px 135px;
+  
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none;
+
+
+}
+.footer-links li
+{
+  display:block;
+}
+.footer-links a
+{
+  color:black;
+  text-decoration:none;
+
+  font-size:20px;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:white;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block;
+}
+#MENU{
+  font-size: 2em;
+  padding-bottom: 6px;
+}
+.about p:hover{
+  color:white;
+}
+#kont{
+  font-size: 2em;
+  padding-bottom: 6px;
+}
+#kont1{
+  padding:5px 0px 5px 0px;
+  font-size: 20px;
+
+}
+.copyright-text
+{
+  font-size: 20px; 
+  text-align: right;
+  display: flex;
+  
+
+}
+.forhover:hover{
+  color:white;
+}
+@media all and (max-width: 1280px){
+  .popular_items{
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0px 30px;
+    margin: 15px 0px;
+      }
+    .about{
+      display: none;
+    }
+    .categories{
+    display: none;
+  }
+  #kont{
+    text-align: center;
+  }
+}
+@media all and (max-width: 1280px){
+  .about{
+  display: none;
+}
+}
+@media all and (max-width: 1280px){
+  .about{
+    display: none;
+  }
+  .categories{
+    display: none;
+  }
+  #kont{
+    text-align: center;
+  }
+}
+
+
+.fixed{
+  padding: 0;
+}
+
+
+.menu li > ul{
+  position: absolute;
+top: 50px;
+content: none;
+display: none;
+padding: 0px;
+}
+.vip_car{
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+.vip_car li{content: none}
+.menu li:hover >ul{
+  display: block;
+  width: 120px;
+}
+.catal:after{content: none;}*/
+
+.backforsep{
+  margin-top:15px;
+  margin-bottom:36px;
+}
+.contact_set{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  
+  border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 600px;
+}
+.shop{
+padding:5px 0px;
+justify-content: space-around;
+}
+
+.contact_set p{
+  color:black;
+  padding-top: 10px;
+  font-size: 1.2em;
+
+}
+.head{
+  font-size: 2em;
+  font-weight: bold;
+  color:#606060;
+  padding-top: 10px;
+
+}
+#footsep{
+  margin-top: 36px;
+  margin-bottom: 0px;
+}
+.main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.map{
+
+  display: flex;
+  width: 600px;
+  border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 15px;
+}
+.map:hover{
+  box-shadow: 0 0 2px 1px #606060;
+}
+.contact_set:hover{
+  box-shadow: 0 0 2px 1px #606060;
+}
+@media screen and (max-width:633px){
+  .contact_set{width: 460px;}
+  .map{width: 460px;margin-top:20px; }
+}
+.shop a{
+  text-decoration: none;
+  font-size: 1.2em;
+  color:#606060;
+}
+#here{
+  text-decoration: underline;
+}
+#here:hover{
+  text-decoration: none;
+}
+
+h6{
+   font-family: 'Open Sans', sans-serif;
+}
+
+/*VIDEO*/
+
+/*
+#video-bg {
+   position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+    background-size: cover;
+}
+
+#video-bg > video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto; 
+}
+*/

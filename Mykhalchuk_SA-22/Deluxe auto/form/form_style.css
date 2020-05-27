@@ -1,0 +1,62 @@
+.backforsep{
+  margin-top:20px;
+}
+input[type=text], textarea {
+  width: 80%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+
+input[type=submit] {
+  background-color: #606060;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: red;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  justify-content: center;
+  padding-left:26%;
+}
+h1{
+  font-size: 2em;
+  color:#606060;
+  align-items: left;
+  font-family: 'Comfortaa', cursive;
+}
+
+.menu li > ul{
+  position: absolute;
+top: 50px;
+content: none;
+display: none;
+padding: 0px;
+}
+.vip_car{
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+.vip_car li{content: none}
+.menu li:hover >ul{
+  display: block;
+  width: 120px;
+}
+.catal:after{content: none;}*/
